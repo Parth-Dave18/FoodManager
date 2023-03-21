@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#2C122832"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:ems="10"
+            android:background="@drawable/curv_bg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="9dp"
+            android:textColor="@color/black"
+            android:textColorHint="#494747"  />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:ems="10"
+            android:layout_marginVertical="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/curv_bg"
+            android:minHeight="48dp"
+            android:padding="9dp"
+            android:textColor="@color/black"
+            android:textColorHint="#494747"  />
+
+        <TextView
+            android:id="@+id/txtClickToSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Click to Sign Up"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFFFFF"
+
+            android:padding="5dp"
+            android:gravity="right"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:padding="15dp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            app:backgroundTint="#64B5F6"
+            app:cornerRadius="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="12dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginRight="3dp"
+                android:text="Google"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_google"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="8dp"/>
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingVertical="12dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginLeft="3dp"
+                android:text="Facebook"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_facebook"
+                app:backgroundTint="#494747"
+                app:cornerRadius="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSignUpPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Sign Up with Phone"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"/>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

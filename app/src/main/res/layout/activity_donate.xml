@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/txtnameDonor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:background="#ECECEC"
+                android:textColor="@color/black"
+                android:textColorHint="#5A5959" />
+
+            <EditText
+                android:id="@+id/txtNoOfItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:hint="No of Food Items"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:background="#ECECEC"
+                android:textColor="@color/black"
+                android:textColorHint="#5A5959" />
+
+            <EditText
+                android:id="@+id/txtFoodQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:hint="No of People can eat"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:background="#ECECEC"
+                android:textColor="@color/black"
+                android:textColorHint="#5A5959" />
+
+            <EditText
+                android:id="@+id/txtBestBefore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:hint="Best before"
+                android:inputType="datetime"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:background="#ECECEC"
+                android:textColor="@color/black"
+                android:textColorHint="#5A5959" />
+
+            <EditText
+                android:id="@+id/txtItemsDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:hint="Item Description"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:background="#ECECEC"
+                android:textColor="@color/black"
+                android:textColorHint="#5A5959" />
+
+            <EditText
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:background="#ECECEC"
+                android:textColor="@color/black"
+                android:textColorHint="#5A5959" />
+
+            <EditText
+                android:id="@+id/txtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:hint="Type your city here"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:background="#ECECEC"
+                android:textColor="@color/black"
+                android:textColorHint="#5A5959" />
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="9dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="20dp"
+                android:ems="10"
+                android:text="Submit"
+                android:textAllCaps="false"/>
+
+
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
